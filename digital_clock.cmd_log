@@ -1,0 +1,1 @@
+xst -ise "C:/Users/MESTERBIN/Desktop/VHDL_PROJET/ALARM_VHDL.ise" -intstyle ise -ifn digital_clock.xst -ofn digital_clock.syr

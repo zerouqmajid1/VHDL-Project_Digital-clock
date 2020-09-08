@@ -1,0 +1,49 @@
+ command line:
+   ./tb_digital_clock_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  60886
+
+Tue Sep 08 20:06:02 2020
+
+Total Line Count : 196
+
+ Elaboration time : 0.03125 sec.
+
+ Estimate current memory usage : 158.401 Meg. 
+
+ Total Signals          : 39
+ Total Nets             : 92
+ Total Signal Drivers   : 19
+ Total Blocks           : 11
+ Total Primitive Blocks : 5
+ Total Processes        : 13
+ Total Traceable Variables  : 0
+ Total Scalar Nets and Variables : 92
+ntrace select -o on -n /tb_digital_clock/clk 
+ntrace select -o on -n /tb_digital_clock/rst_n 
+ntrace select -o on -n /tb_digital_clock/h_in1 
+ntrace select -o on -n /tb_digital_clock/h_in0 
+ntrace select -o on -n /tb_digital_clock/m_in1 
+ntrace select -o on -n /tb_digital_clock/m_in0 
+ntrace select -o on -n /tb_digital_clock/h_out1 
+ntrace select -o on -n /tb_digital_clock/h_out0 
+ntrace select -o on -n /tb_digital_clock/m_out1 
+ntrace select -o on -n /tb_digital_clock/m_out0 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+WARNING:Simulator:29 - at 0 ns: Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an
+   arithmetic operand, the result will be 'X'(es).
+WARNING:Simulator:29 - at 0 ns: Warning: CONV_INTEGER: There is an
+   'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+WARNING:Simulator:29 - at 0 ns: Warning: CONV_INTEGER: There is an
+   'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+Finished circuit initialization process.
+
+ Simulation time 2.0625 sec.
+
+ Estimate current memory usage : 164.037 Meg. 
+
+Tue Sep 08 20:21:50 2020
+
